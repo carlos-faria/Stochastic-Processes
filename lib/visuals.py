@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-def pdfInfo(interval, values, rng, xlim=None):
+def plotPdf(interval, values, rng, xlim=None):
     fig, ax = plt.subplots()
     ax.plot(interval, values, 'k')
     
