@@ -1,10 +1,11 @@
 import sympy
 import sympy.functions.elementary.exponential as symExp
-import numpy as np
 
+constant = sympy.symbols('constant')
+
+def get_constant(): return constant
 
 def integrateFunc(func, variable, bounds=None, paramsToSub = {}, conds='none'):
-	constant = sympy.symbols('constant')
 	if bounds == None:
 		func_int = sympy.integrate(func.subs(paramsToSub), variable, conds=conds) + constant
 	else:

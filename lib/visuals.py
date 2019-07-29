@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 def plotPdf(interval, values, rng, xlim=None):
+
+    #### Colocar cor diferente nas áreas abaixo do gráfico
+
     fig, ax = plt.subplots()
     ax.plot(interval, values, 'k')
     
